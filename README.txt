@@ -1,4 +1,18 @@
-Script analyze logs from backup scripts which make backup from network devices and send result in slack
+Scrypts to backup config from cisco devices ( and extreme 210 )
+  Cisco_SW.py
+  Cisco_ASA.py 
+	Extreme_210.py 	
+	ME_Controller.py
+
+In result folder
+  backpy_diff.py - compare backups and remove the identical files
+  result.py - create file "brief" which contain result of backup scripts
+  slack.py - send file "brief" to slack
+
+
+***
+
+Scripts analyze logs from backup scripts which make backup from network devices and send result in slack
 
 We have crontab on server which run backup_srcipts
 And we have logs as result of this scripts:
