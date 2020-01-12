@@ -23,10 +23,12 @@ crontab -l
 1 9 * * * /usr/bin/python3.6 -q /home/user/scripts/ME_Controller.py >>  /home/user/mount/tftp/logs/ME.log 
 
 Then backpy_diff.py delete equal files
-10 9 * * * /usr/bin/python3.6 -q /home/user/scripts/backpy_diff >>  /home/user/mount/tftp/logs/diff.log
+10 9 * * * /usr/bin/python3.6 -q /home/user/scripts/diff.py >>  /home/user/mount/tftp/logs/diff.log
 
-Then result.py analyze logs from logs and create brief file which contain result of scripts work
+Then result.py analyze logs and create "brief" file which contain result of scripts work
 15 9 * * * /usr/bin/python3.6 -q /home/user/scripts/result/result.py >>  /home/user/mount/tftp/logs/result.log
+
+Example of result "result.py" script:
 
 cat /home/user/scripts/result/brief
 
@@ -38,6 +40,6 @@ cat /home/user/scripts/result/brief
 # 
 # Result for backup of SW1 is *****  Success  ******
 
-Finaly slack.py send message of result to slack
+Finaly slack.py send message which contain "brief" file to slack
 59 9 * * * /usr/bin/python3.6 -q /home/user/scripts/result/slack.py >>  /home/user/mount/tftp/logs/slack.log 
 
