@@ -12,29 +12,33 @@ This project consist of several scripts witch allows you do the next things:
 Each part has own scripts:
 
 - Scripts to backup
-star:
+
   - Cisco_SW.py
   - Cisco_ASA.py 
   - Extreme_210.py 	
   - ME_Controller.py
 - Scripts to compare backups
-star:
+
   - backpy_diff.py
 - Script to analyze logs from previos stages and send notification to Slack
-star:
+
   - slack.py
 
 ### Prerequisites
 
 All this scripts was developed to use at any unix-like system. 
 
-To make it work you need:
-`python v3.6 ` [How install python 3](https://realpython.com/installing-python/)
+To make it work you need 
+1. `python v3.6 `
+
+[How install python 3](https://realpython.com/installing-python/)
+
+To check is phyton 3.6 installed you can type
 ```
 python3.6 --version
 ```
 
-`crontab` The software utility cron is a time-based job scheduler in Unix-like computer operating systems. Ususally installed default
+2. `crontab` The software utility cron is a time-based job scheduler in Unix-like computer operating systems. Ususally installed default
 ```
 crontab ?
 ```
