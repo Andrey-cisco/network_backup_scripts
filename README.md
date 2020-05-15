@@ -1,4 +1,4 @@
-# Network backup sceipts
+# Network backup scripts
 
 This is just a one way to make backup configs from Cisco with python
 
@@ -11,16 +11,16 @@ This project consist of several scripts witch allows you do the next things:
 
 Each part has own scripts:
 
-1. Scripts to backup:
+1. Scripts to backup
 star:
   - Cisco_SW.py
   - Cisco_ASA.py 
   - Extreme_210.py 	
   - ME_Controller.py
-2. Scripts to compare backups:
+2. Scripts to compare backups
 star:
   - backpy_diff.py
-3. Script to analyze logs from previos stages and send notification to Slack:
+3. Script to analyze logs from previos stages and send notification to Slack
 star:
   - slack.py
 
@@ -28,12 +28,14 @@ star:
 
 All this scripts was developed to use at any unix-like system. 
 
-To make it work you need a 
+To make it work you need:
 `python v3.6 ` [How install python 3](https://realpython.com/installing-python/)
-`crontab` The software utility cron is a time-based job scheduler in Unix-like computer operating systems. Ususally installed default
-
 ```
 python3.6 --version
+```
+
+`crontab` The software utility cron is a time-based job scheduler in Unix-like computer operating systems. Ususally installed default
+```
 crontab ?
 ```
 
@@ -74,8 +76,9 @@ Then result.py analyze logs from and create "brief" file which contain result of
 15 9 * * * /usr/bin/python3.6 -q ~/scripts/result/result.py >>  /home/user/mount/tftp/logs/result.log
 ```
 And send result to Slack
+```
 59 9 * * * /usr/bin/python3.6 -q /home/backup/scripts/result/slack.py >>  /home/backup/mount/tftp/logs/slack.log
-
+```
 
 ### Tests 
 
@@ -85,7 +88,7 @@ Then you can try start all scripts for backup malualy:
 ```
 /usr/bin/python3.6 -q ~/scripts/Cisco_ASA.py
 ```
-If all if fine you see the next:
+If all is fine you'll see the next:
 ```
 #########  Script started at: 15-05-2020 10:34:16  #########
  ssh connected
@@ -153,7 +156,7 @@ Also Yoy need generate tocken for web hook to send something into slack [Webhook
 
 And of course you need create **acl** to have an access devices with ssh
 
-**Before start diff.py you have to start scripts to backup ( files witch will be compared should exist )**
+**Before start diff.py you have to start scripts to backup ( files whitch will be compared should exist )**
 
 
 ## Versioning
@@ -175,5 +178,5 @@ This project has free licence.
 ## Acknowledgments
 
 You can add similar script to this repo to make backup from another devices and share it with a world! 
-With a luck!
+Wish you a luck!
 
