@@ -11,16 +11,16 @@ This project consist of several scripts witch allows you do the next things:
 
 Each part has own scripts:
 
-1. Scripts to backup
+- Scripts to backup
 star:
   - Cisco_SW.py
   - Cisco_ASA.py 
   - Extreme_210.py 	
   - ME_Controller.py
-2. Scripts to compare backups
+- Scripts to compare backups
 star:
   - backpy_diff.py
-3. Script to analyze logs from previos stages and send notification to Slack
+- Script to analyze logs from previos stages and send notification to Slack
 star:
   - slack.py
 
