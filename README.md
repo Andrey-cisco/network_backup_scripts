@@ -29,19 +29,13 @@ Each part has own scripts:
 All this scripts was developed to use at any unix-like system. 
 
 To make it work you need 
-1. `python v3.6 `
-
-[How install python 3](https://realpython.com/installing-python/)
+1. `python v3.6 ` [How install python 3](https://realpython.com/installing-python/)
 
 To check is phyton 3.6 installed you can type
-```
-python3.6 --version
-```
+`python3.6 --version`
 
 2. `crontab` The software utility cron is a time-based job scheduler in Unix-like computer operating systems. Ususally installed default
-```
-crontab ?
-```
+`crontab ?`
 
 ### Installing
 
