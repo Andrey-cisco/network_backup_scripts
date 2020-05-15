@@ -163,7 +163,7 @@ You can make forks and you [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* **Andrey Trushchelev** - *Initial work* - [Linkedin](https://www.linkedin.com/in/andrey-trushchelev/)
+**Andrey Trushchelev** - [Linkedin](https://www.linkedin.com/in/andrey-trushchelev/)
 
 See also my public projects at [GitLab](https://gitlab.com/TrueAndrD)
 
@@ -176,5 +176,5 @@ This project has free licence.
 ## Acknowledgments
 
 You can add similar script to this repo to make backup from another devices and share it with a world! 
-Wish you a luck!
+Wish you a luck! :+1:
 
